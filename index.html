@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YummyExam</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styleInd.css">
+</head>
+
+<body>
+
+    <section id="home">
+        <nav class=" navbar-expand-sm position-fixed start-0 top-0 bottom-0 navbar-light bg-light z-2">
+            <div class="container">
+                <div class="position-absolute top-0 bottom-0 row pe-5 bg-black text-light ps-3 z-2">
+                    <div class=" pe-5 ps-2 mb-5 mt-4">
+                        <ul class=" list-unstyled pe-5 pb-5">
+                            <li class="nav-item mt-2 ">
+                                <a class="searx text-decoration-none text-light navl" href="#Search">Search</a>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <a class="nav-link navl" href="#Categories">Categories</a>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <a class="nav-link navl" href="#Area">Area</a>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <a class="nav-link navl " href="#Ingredients">Ingredients</a>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <a class="nav-link contac navl" href="#Contact Us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-5 me-5">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter "></i>
+                        <i class="fa-solid fa-globe "></i>
+                        <p>Copyright Â© 2019 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div
+            class="logo-ic position-fixed top-0 bottom-0 d-flex flex-column justify-content-between align-items-center z-3">
+            <img src="imgs/logo.png" alt="logo" class="w-75 mt-3">
+            <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+            <div class="d-flex flex-column pb-3">
+                <i class="fa-solid fa-globe mt-1"></i>
+                <i class="fa-solid fa-share-nodes pt-1 "></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="searchCont" class="bg-black pb-5 pt-5 d-none" >
+        <div class="searchCont">
+            <div class="container">
+                <form class="row ">
+                 <div class="col-md-6 mt-3">
+                 <input type="text" placeholder="Search By Name"  class="form-control text-light" id="SearchByName">
+                </div>
+                 <div class="col-md-6 mt-3">
+                 <input type="text" placeholder="Search By First letter" maxlength="1"  size="1"  class="form-control text-light"  id="SearchByFirstletter">
+                 </div>
+                 </form>
+                 </div>
+        </div>
+</section>
+
+    <section id="content" class="bg-black pb-5 pt-5">
+        <div class="container" >
+            <div class="row cateogry ">
+        
+            </div>
+            </div>
+        
+    </section>
+
+    <section id="contactUS" class="bg-black  d-none">
+        <div class="container z-3">
+            <div class="row justify-content-center ">
+            <form class="row w-75 ">
+            <div class="col-md-6 mt-3 ">
+             <input type="text" class="form-control "   id="inputName" placeholder="Enter Your Name" >
+             <div class="alert d-none  notvall  alert-danger mt-2 "role="alert">
+             </div>
+             
+             </div>
+             <div class="col-md-6 mt-3">
+             <input type="email" class="form-control"   id="inputEmail" placeholder="Enter Your Email">
+             <div class="alert  notvall  alert-danger mt-2 "role="alert">
+            </div>
+             </div> 
+             <div class="col-md-6 mt-3">
+             <input type="number" class="form-control"  id="inputphone" placeholder="Enter Your Phone">
+             <div class="alert  notvall  alert-danger mt-2 "role="alert">
+            </div>
+             </div>
+             <div class="col-md-6 mt-3">
+             <input type="number" class="form-control"   id="inputAge" placeholder="Enter Your Age">
+             <div class="alert  notvall  alert-danger mt-2 "role="alert">
+            </div>
+             </div>
+             <div class="col-md-6 mt-3">
+             <input type="password" class="form-control"  id="inputPassword" placeholder="Enter Your Password">
+             <div class="alert  notvall  alert-danger mt-2 "role="alert">
+            </div>
+             </div>
+             <div class="col-md-6 mt-3 mb-3">
+             <input type="password" class="form-control"  id="inputRepassword" placeholder="RePassword">
+             <div class="alert  notvall  alert-danger mt-2 "role="alert">
+            </div>
+             </div>
+             <div class="col-1 mx-auto pe-5">
+                <button class="btn btn-black" disabled type="button">submit</button>
+              </div>
+             </form>
+            </div>
+         </div>
+    </section>
+
+
+    <div class="loading justify-content-center align-items-center">
+        <div class="loader"></div>
+    </div>
+
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module"  src="js/main.js"></script>
+</body>
+</html>

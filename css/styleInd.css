@@ -1,0 +1,91 @@
+#home {
+    background-color: yellowgreen;
+}
+
+.navbar-expand-sm {
+    display: none;
+}
+
+.logo-ic {
+    background-color: rgb(255, 255, 255);
+    width: 5%;
+}
+
+#content {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#SearchByName{
+    background-color: black;
+}
+#SearchByFirstletter{
+    background-color: black;
+}
+#SearchByName::placeholder{
+    color: rgb(139, 139, 139);
+}
+#SearchByFirstletter::placeholder{
+    color: rgb(139, 139, 139);
+}
+.btn{
+    --bs-btn-color: #aa2626;
+    --bs-btn-border-color: #842020;
+}
+.on-photo{
+    background-color: rgba(255, 255, 255, 0.8);
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    display: none;
+}
+#searchCont{
+height: 100vh;
+overflow-y: hidden;
+}
+.loading {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    z-index: 999999999999999;
+    display: flex;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  animation: prixClipFix 2s linear infinite ;
+}
+
+@keyframes rotate {
+  100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+.navl{
+  display: none;
+}
+#contactUS{
+    height: 100vh;
+    display: none;
+}
